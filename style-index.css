@@ -1,3 +1,5 @@
+/* Estilização  geral */
+
 *{
 
     padding: 0;
@@ -6,6 +8,8 @@
     font-family: "Poppins", sans-serif;
     
 }
+
+/* Centralização da div central e estilização do Background */
 
 body{
 
@@ -16,9 +20,11 @@ body{
     background: url(./images/img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
 
 }
+
+/* Estilização do bloco central */
 
 .login{
 
@@ -41,6 +47,8 @@ body{
 
 }
 
+
+/* Estilização das barras de preenchimentos */
 .login .inputbox{
 
     position: relative;
@@ -80,6 +88,7 @@ body{
     font-size: 20px;
 }
 
+/* Estilização do link "Esqueci senha" */
 .login .esqueci-senha{
 
     display: flex;
@@ -100,6 +109,8 @@ body{
     color: darkblue;
 }
 
+
+/* Estilização do botão */
 .login .button{
 
     display: flex;
