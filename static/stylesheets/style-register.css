@@ -1,0 +1,146 @@
+/* Estilização  geral */
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+/* Centralização da div central e estilização do Background */
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+
+}
+
+/* Estilização do bloco central */
+
+.register{
+
+    min-width: 260px;
+    width: 500px;
+    background: whitesmoke;
+    color: darkblue;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(0, 0, 0,.5);
+    outline: #063f84 solid 5px;
+    padding: 30px 40px;
+    margin: 20px;
+
+}
+
+.register .logo{
+
+    display:flex;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
+/* Estilização das barras de preenchimentos */
+.register .inputbox{
+
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+
+}
+
+.inputbox input{
+
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid  #063f84;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 550;
+    color: #010e53;
+    padding: 20px 45px 20px 20px;
+
+}
+.inputbox input::placeholder{
+
+    color: #010f539f;
+
+}
+
+.inputbox i{
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+
+/* Estilização do botão */
+.register .button-register{
+
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 20px;
+}
+
+.register .btn{
+
+    width: 30%;
+    height: 45px;
+    background-color: #010e53;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 550;
+    transition: ease-in-out .3s;
+
+}
+
+.register .btn:hover{
+
+    background-color: #0b1f86;
+    color: aliceblue;
+}
+
+/* Estilização do link login */
+.register .pag-login{
+
+    display: flex;
+    justify-content: center;
+    font-size: 14.5px;
+    margin: 0;   
+}
+
+.pag-login p{
+
+    color: rgb(116, 116, 216);
+}
+
+.pag-login a{
+    text-decoration: none;
+}
+
+.pag-login strong:hover{
+
+    color: darkblue;
+    
+}

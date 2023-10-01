@@ -22,6 +22,7 @@ header{
     
 }
 
+
 /* Estilização Menu Esquerdo */
 
 .button-home label{
@@ -31,8 +32,10 @@ header{
     color: aliceblue;
     display: block;
     cursor: pointer;
-
+    
 }
+
+
 
 .button-home ul{
     position: absolute;
@@ -49,19 +52,19 @@ header{
 }
 
 [id^=left-button]:checked + ul{
-
+    
     transform: translateY(0);
 }
 
 
 .button-home ul li{
-
+    
     text-align: center;
     display:flex;
     line-height: 40px;
     padding: 8px 20px;
     cursor: pointer;
-
+    
 }
 
 .button-home ul li:hover{
@@ -75,12 +78,12 @@ header{
 }
 
 .button-home ul li a{
-
+    
     color: aliceblue;
     text-decoration: none;
     font-size: 13px;
     display: block;
-
+    
 }
 
 input{
@@ -90,6 +93,7 @@ input{
 /* Nome da pagina */
 
 header .title{
+    font-size: 200%;
     color: aliceblue;
     margin: 0 60px;
 }
@@ -97,7 +101,7 @@ header .title{
 /* Itens da direita */
 
 .itens-right{
-
+    
     position: absolute;
     display: flex;
     right: 0;
@@ -123,7 +127,7 @@ header .title{
 /* menu direito */
 
 .button-arrow label{
-
+    
     margin-right: 10px;
     width: auto;
     margin-top: 6px ;
@@ -151,19 +155,19 @@ header .title{
 
 
 [id^=right-button]:checked + ul{
-
+    
     transform: translateY(0);
-
+    
 }
 
 .button-arrow ul li{
-
+    
     text-align: center;
     display:flex;
     line-height: 40px;
     padding: 8px 20px;
     cursor: pointer;
-
+    
 }
 
 .button-arrow ul li:hover{
@@ -177,10 +181,68 @@ header .title{
 }
 
 .button-arrow ul li a{
-
+    
     color: aliceblue;
     text-decoration: none;
     font-size: 13px;
     display: block;
+    
+}
 
+/* Estilazação de conteúdo */
+
+.content{
+
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+
+}
+
+.content .well-text{
+
+    display: inline;
+    align-items: center;
+    justify-content: center;
+
+    height: 500px;
+    width: 500px;
+}
+
+.content .well-text{
+
+    position: relative;
+
+}
+
+.content .logo{
+    position: absolute;
+    top: 2px;
+    left: 160px;
+
+    width: 200px;
+}
+
+.content h4{
+    margin-top: 40px;
+}
+
+/* Tamanho de tela */
+
+@media (max-width: 500px) {
+    
+    .usuario{
+        margin-right: -70px ;
+    }
+
+    .usuario i{
+        display: none;
+    }
+
+    header .title{
+            margin: 0;
+        }
+    
 }

@@ -2,25 +2,22 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=100%, initial-scale=1.0">
-    <link rel="stylesheet" href="CiesaLabs-main\css\style-index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Ciesa Lab</title>
+    <link rel="stylesheet" href="../static/stylesheets/style-login.css">
+    <title>Ciesa Labs</title>
 </head>
 <body>
-
-
     <!-- Bloco central -->
     <div class="login">
         <form action="/login" method="POST">
-
             <!-- Logo Ciesa Labs -->
-            <div class="logo"><img src=".CiesaLabs-main\css\images\Ciesa Labs - Logo.png" alt="logo"></div>
+            <div class="logo"><img src="../static/images/Ciesa Labs - Logo.png" alt="logo"></div>
             
-            <!-- Entrada de Usuario -->
+            <!-- Entrada de E-mail -->
             <div class="inputbox">
-                <input type="text" placeholder="Usuario"  id="email" required name="email">
-                <i class='bx bxs-user'></i>
+                <input type="text" placeholder="E-mail"  id="email" required name="email">
+                <i class='bx bxs-envelope'></i>
             </div>
             
             <!-- Entrada de Senha -->
@@ -29,16 +26,16 @@
                 <i class='bx bxs-lock-alt' ></i>
             </div>
 
-            <!-- Botão Esqueci minha senha -->
-            <div class="esqueci-senha">
-                <a href="#">Esqueci minha senha.</a>
-            </div>
-            
             <!-- Botão Entrar -->
             <div class="button">
                 <button type="submit" class="btn">ENTRAR</button>
             </div>
-
+            
+            <!-- Botão para tela de registro -->
+            <div class="pag-register">
+                <p>Não possui um registro? <a href="register"><strong class="link-login">Registrar</strong></a></p>
+            </div>
+    
         </form>
     </div>
 

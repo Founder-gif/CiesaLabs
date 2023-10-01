@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="templates/style-home.css">
-    <title>Ciesa Lab</title>
+    <link href="../static/stylesheets/style-home.css" rel="stylesheet">
+    <title>Ciesa Labs</title>
 </head>
 <body>
 
@@ -13,10 +13,10 @@
 
         <!-- Botão esquerdo -->
         <nav class="button-home">
-        <form action="/register" method="POST"></form>>
+        <form action="/register" method="POST"></form>
             <label for="left-button">
                 
-                <i class="bx bx-menu"></i>
+                <i class="bx bx-menu" id=""></i>
                 
             </label>
             
@@ -51,10 +51,10 @@
                 <!-- Usuario -->
                 <div class="usuario">
                     <i class="bx bx-user-circle"></i>
-                    <h2>Usuario</h2>
+                    <h2>{{ user }}</h2>
                 </div>
                 
-                <!-- Menu direito -->
+                   <!-- Menu direito -->
                 <nav class="button-arrow">    
                     <label for="right-button">
                         <i class='bx bx-chevron-down'></i>
@@ -63,7 +63,7 @@
                     <ul class="right-menu">
 
                         <li><a href="#">Perfil</a></li>
-                        <li><a href="#">Sair</a></li>
+                        <li><a href="logout">Sair</a></li>
 
                     </ul>
                 </nav>
