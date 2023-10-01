@@ -1,3 +1,5 @@
+/* Estilização  geral */
+
 *{
 
     padding: 0;
@@ -7,21 +9,27 @@
     
 }
 
+/* Centralização da div central e estilização do Background */
+
 body{
 
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(./images/img.jpg) no-repeat;
+    background: url(../images/img.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    
 
 }
 
+/* Estilização do bloco central */
+
 .login{
 
+    min-width: 260px;
     width: 500px;
     background: whitesmoke;
     color: darkblue;
@@ -29,6 +37,7 @@ body{
     box-shadow: 0 0 15px rgb(0, 0, 0,.5);
     outline: #063f84 solid 5px;
     padding: 30px 40px;
+    margin: 20px;
 
 }
 
@@ -37,10 +46,12 @@ body{
     display:flex;
     width: 100%;
     height: 100px;
-    padding: 0 80px;
+    justify-content: center;
 
 }
 
+
+/* Estilização das barras de preenchimentos */
 .login .inputbox{
 
     position: relative;
@@ -80,6 +91,7 @@ body{
     font-size: 20px;
 }
 
+/* Estilização do link "Esqueci senha" */
 .login .esqueci-senha{
 
     display: flex;
@@ -100,6 +112,8 @@ body{
     color: darkblue;
 }
 
+
+/* Estilização do botão */
 .login .button{
 
     display: flex;
@@ -109,30 +123,24 @@ body{
 
 .login .btn{
 
-    width: 30%;
-    height: 45px;
+    width: 8rem;
+    height: 3.5rem;
     background-color: #010e53;
     color: aliceblue;
     border: none;
     outline: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 100%;
     font-weight: 550;
+    transition: ease-in-out .3s;
 
 }
 
 .login .btn:hover{
 
-    width: 30%;
-    height: 45px;
     background-color: #0b1f86;
     color: aliceblue;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 550;
 
 }
+
