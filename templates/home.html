@@ -26,32 +26,32 @@
 
                 <li>
                     <i class="bx bx-home"></i>
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
                     <i class="bx bx-user"></i>
-                    <a href="#">Usuário</a>
+                    <a href="#usuario">Usuário</a>
                 </li>
                 <li>
                     <i class="bx bx-calendar"></i>
-                    <a href="#">Agendamento</a>
+                    <a href="#agendamento">Agendamento</a>
                 </li>
                 <li>
                     <i class="bx bx-phone"></i>
-                    <a href="#">Contatos</a>
+                    <a href="#contato">Contatos</a>
                 </li>
 
             </ul>
         </nav>
 
         <!-- Titulo da pagina -->
-        <h1 class="title">HOME</h1>
+        <h1 class="title">Labs</h1>
             
             <div class="itens-right">
                 <!-- Usuario -->
                 <div class="usuario">
                     <i class="bx bx-user-circle"></i>
-                    <h2>{{ user }}</h2>
+                    <h2>{{ user.name }}</h2> <!-- Trocar "user" para "user.name" -->
                 </div>
                 
                    <!-- Menu direito -->
@@ -62,13 +62,175 @@
                     <input type="checkbox" id="right-button">
                     <ul class="right-menu">
 
-                        <li><a href="#">Perfil</a></li>
+                        <li><a href="#usuario">Perfil</a></li>
                         <li><a href="logout">Sair</a></li>
 
                     </ul>
                 </nav>
             </div>
-        </header>
+    </header>
+
+    <div class="conteudo">
+        <section id="home">
+            
+            <h1>Seja bem vindo!</h1>
+        
+        </section>
+        <section id="usuario">
+            
+            <h1>Futuras atualizações!</h1>
+            
+        </section>
+        <section id="agendamento">
+            
+            <div class="bloco">
+                <div class="reserva">
+                    <form action="/reserva" method="post">
+
+                        <h1>Reservar laboratorio</h1>
+                        
+                        <ol>
+                            <li id="num_lab">
+                                <label for="num_lab">Laboratorio</label>
+                                <ol id="num_lab_selector">
+                                    
+                                    <label for="">1</label>
+                                    <input type="checkbox" name="" id="">
+                                    
+                                    <label for="">2</label>
+                                    <input type="checkbox" name="" id="">
+                                    
+                                    <label for="">3</label>
+                                    <input type="checkbox" name="" id="">
+                                    
+                                    <label for="">4</label>
+                                    <input type="checkbox" name="" id="">
+                                
+                                </ol>                                
+                            </li>
+                            <li id="dia">
+                                <label for="dia">Data</label>
+                                <input type="date">
+                            </li>
+                            <li id="horario">
+                                
+                                <label for="Incio">Inicio</label>
+                                <input type="time">
+                                <label for="Fim">Fim</label>
+                                <input type="time">
+                            </li>
+                            <li id="objetivo">
+                                <label for="objetivo">Objetivo</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Descreva o que predente fazer."></textarea>
+                            </li>
+                        </ol>
+                        
+                        <label class="button">
+                            <button type="submit" class="btn">Reservar</button>
+                        </label>
+                        
+                    </form>
+                </div>
+                <div class="historico">
+                    <h1>Dias ja reservados</h1>
+
+                    <ol class="lista_historico">
+                        <li>
+                            <label class="lab_reservado">
+                                <h2 class="nome">Renato algusto</h2>
+                                <ol class="info_historico">
+                                    <li>Lab
+                                        <label for="hist_lab">3</label>
+                                    </li>
+                                    <li>Data
+                                        <label for="hist_data">20/11/2023</label>
+                                    </li>
+                                    <li>Hora
+                                        <label for="hist_hora">18:30 as 20:00</label>
+                                    </li>
+                                </ol>
+                            </label>
+                        </li>
+                        <li>
+                            
+                            <label class="lab_reservado">
+                                <h2 class="nome">João Paulo</h2>
+                                <ol class="info_historico">
+                                    <li>Lab
+                                        <label for="hist_lab">3</label>
+                                    </li>
+                                    <li>Data
+                                        <label for="hist_data">20/11/2023</label>
+                                    </li>
+                                    <li>Hora
+                                        <label for="hist_hora">20:15 as 22:00</label>
+                                    </li>
+                                </ol>
+                            </label>
+                        </li>
+                        <li>
+                            
+                            <label class="lab_reservado">
+                                <h2 class="nome">Janaina</h2>
+                                <ol class="info_historico">
+                                    <li>Lab
+                                        <label for="hist_lab">1</label>
+                                    </li>
+                                    <li>Data
+                                        <label for="hist_data">20/11/2023</label>
+                                    </li>
+                                    <li>Hora
+                                        <label for="hist_hora">18:30 as 22:00</label>
+                                    </li>
+                                </ol>
+                            </label>
+                        </li>
+                        <li>
+                            
+                            <label class="lab_reservado">
+                                <h2 class="nome">Renato Algusto</h2>
+                                <ol class="info_historico">
+                                    <li>Lab
+                                        <label for="hist_lab">3</label>
+                                    </li>
+                                    <li>Data
+                                        <label for="hist_data">22/11/2023</label>
+                                    </li>
+                                    <li>Hora
+                                        <label for="hist_hora">18:30 as 20:00</label>
+                                    </li>
+                                </ol>
+                            </label>
+                        </li>
+                        <li>
+                            
+                            <label class="lab_reservado">
+                                <h2 class="nome">Flavia Duarte</h2>
+                                <ol class="info_historico">
+                                    <li>Lab
+                                        <label for="hist_lab">2</label>
+                                    </li>
+                                    <li>Data
+                                        <label for="hist_data">24/11/2023</label>
+                                    </li>
+                                    <li>Hora
+                                        <label for="hist_hora">18:30 as 22:00</label>
+                                    </li>
+                                </ol>
+                            </label>
+                        </li>
+                    </ol>
+
+                </div>
+            </div>
+            
+        </section>
+        <section id="contato">
+
+            <h1>Futuras atualizações!</h1>
+
+        </section>
+    </div>
 
 </body>
 </html>
